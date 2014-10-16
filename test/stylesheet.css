@@ -1,0 +1,139 @@
+// BaseKit Baseplate Template (v1.0)
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.canvas  {
+  background-color: darken(@color-swatch1,5%);
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+
+// Page Container
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+a {
+  outline : none;
+  img {
+    border : 0;
+    outline : none;
+    max-width: 100%;
+  }
+}
+
+img {
+  border : 0;
+  border-style: none;
+  max-width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Widget Positioning
+.widget {
+  position:relative;
+}
+
+// Main Zone
+.bk-zone {
+  min-height:40px;
+}
+
+
+
+// -----------------------------
+// 3. #Template Styles
+// -----------------------------
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+.bk-header .header-bg {
+    background-color: #ffffff;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.companyheader {
+  display: block;
+  background-position: top center; 
+  padding: 0px 0px 0px 10px
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+  margin-top: 10px;
+  a {
+    font-size: @font-swatch10-font-size;
+    @media @mobile {
+      font-size: bkscale(@font-swatch10-font-size, 1);
+    }
+  }
+}
+
+.widget.companyname h1 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+/* LOGO */
+
+.widget.logo {
+  margin-right: 10px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+
+

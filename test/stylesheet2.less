@@ -1,0 +1,221 @@
+// BaseKit Baseplate Template (v1.0)
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.canvas  {
+  background-color: darken(@color-swatch1,5%);
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+
+// Page Container
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+a {
+  outline : none;
+  img {
+    border : 0;
+    outline : none;
+    max-width: 100%;
+  }
+}
+
+img {
+  border : 0;
+  border-style: none;
+  max-width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Widget Positioning
+.widget {
+  position:relative;
+}
+
+// Main Zone
+.bk-zone {
+  min-height:40px;
+}
+
+
+
+// -----------------------------
+// 3. #Template Styles
+// -----------------------------
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header.bk-header {
+  padding: 0;
+  background-color: #999999;
+  height: 50px;
+}
+
+header.w-header{
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+
+.companyheader {
+  display: block;
+  background-position: top center; 
+  padding: 0px 10px 0px 10px
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+  margin-top: 10px;
+  a {
+    font-size: @font-swatch10-font-size;
+    @media @mobile {
+      font-size: bkscale(@font-swatch10-font-size, 1);
+    }
+  }
+}
+
+.widget.companyname h1 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+/* LOGO */
+
+.widget.logo {
+  width: 100%;
+  text-align: center;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+  width: 100%;
+  text-align: center;
+}
+
+.companyname a:hover {
+  text-decoration: none;
+}
+
+.widget.companyname a {
+  font-family:@font-swatch10-font-family;
+  font-weight: @font-swatch10-font-weight;
+  color:@font-swatch1-color;
+  line-height:@font-swatch10-line-height;
+  letter-spacing: @font-swatch10-letter-spacing;
+  font-size: @font-swatch10-font-size;
+  padding: 10px 8px 8px;
+}
+
+/*	===============================
+	Extended Navigation
+	=============================== */
+
+.navbar {
+	background-color:#999999;
+	border-bottom:4px solid @color-swatch2;
+	padding:5px 0px;
+}
+
+.widget.extendednavigation {
+	display: inline-block;
+	position: relative;
+	margin-left: 80px;
+	width: 100%;
+	vertical-align: bottom;
+	@media @tablet {
+		display: block;
+		margin-top: 15px;
+		width: 100%;
+	}
+}
+
+.widget .extendednavigation ul li:hover ul {
+	background-color:lighten(@color-swatch3,15%);
+}
+
+.widget .extendednavigation ul li.folder:after {
+  border-top-color:@font-swatch6-color;
+}
+
+.widget .extendednavigation ul li a {
+	padding: 5px 20px;
+}
+
+.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+	padding:10px 20px;
+}
+
+.widget .extendednavigation ul li.folder:after {
+	top:48%;
+}
+
+.widget .extendednavigation > ul > li > a:hover {
+	color:@font-swatch6-color;
+	border-bottom:4px solid @color-swatch7;
+	margin-bottom: -9px;
+	padding-bottom: 15px;
+}
+
+.widget .extendednavigation ul li.folder .text:hover {
+	color:@font-swatch6-color;
+}
+
+.widget .extendednavigation ul li:hover ul {
+	background-color:@color-swatch7;
+}
+
+.widget .extendednavigation ul li.folder .text {
+	color:@font-swatch7-color;
+}
+
+.widget .extendednavigation ul > li.folder > .text {
+	color:@font-swatch6-color;
+}
+
+
+
