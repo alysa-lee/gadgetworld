@@ -1,5 +1,5 @@
 {
-    "name":"First-step",
+    "name":"Gadget-World",
     "thumbnail":"thumbnail.png",
     "pageTypes": ["Home"],
     "tags": {
@@ -10,7 +10,7 @@
         "Swatch 1": {
             "color1":"#000000",
             "color2":"#fbac71",
-            "color3":"#63b29f",
+            "color3":"#11b0be",
             "color4":"#838383",
             "color5":"#acacac",
             "color6":"#ffffff",
